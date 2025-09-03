@@ -34,7 +34,10 @@ const Footer = () => {
                 rows={4}
                 className="w-full px-3 py-2 bg-secondary/50 border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
               />
-              <Button className="bg-gradient-primary hover:opacity-90 transition-opacity">
+              <Button 
+                className="bg-gradient-primary hover:opacity-90 transition-opacity"
+                onClick={() => window.open('mailto:abelassefa19@gmail.com', '_blank')}
+              >
                 Send Message
               </Button>
             </div>
@@ -45,14 +48,18 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6">Connect</h3>
             <div className="space-y-4">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/abel7888/" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="flex items-center text-muted-foreground hover:text-accent transition-colors"
               >
                 <Linkedin className="mr-3 h-5 w-5" />
                 LinkedIn
               </a>
               <a 
-                href="#" 
+                href="https://calendly.com/abelassefa788/partnerships-investor-and-advisors-information" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="flex items-center text-muted-foreground hover:text-accent transition-colors"
               >
                 <Calendar className="mr-3 h-5 w-5" />

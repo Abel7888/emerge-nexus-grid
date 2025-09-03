@@ -17,11 +17,11 @@ const VentureCard = ({ title, description, testLink, isComingSoon = false }: Ven
       </p>
       
       <div className="flex flex-col gap-3">
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col gap-3">
           <Button 
             variant="outline" 
             size="sm" 
-            className="flex-1 border-border hover:border-accent transition-colors"
+            className="w-full border-border hover:border-accent transition-colors"
             disabled={isComingSoon}
           >
             <FileText className="mr-2 h-4 w-4" />
@@ -30,7 +30,7 @@ const VentureCard = ({ title, description, testLink, isComingSoon = false }: Ven
           
           <Button 
             size="sm" 
-            className="flex-1 bg-gradient-primary hover:opacity-90 transition-opacity"
+            className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
             disabled={isComingSoon}
           >
             <Wallet className="mr-2 h-4 w-4" />

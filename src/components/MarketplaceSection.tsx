@@ -31,6 +31,11 @@ const MarketplaceSection = () => {
       title: "🪙 Tokenize App",
       description: "Launch your own tokenized assets platform. A white-label turnkey solution that lets companies create, manage, and scale digital securities under their brand. From onboarding investors to issuing tokens and automating compliance — everything in one place.",
       testLink: "https://tokenize-flow.vercel.app"
+    },
+    {
+      title: "🏠 TenantAI",
+      description: "Unlock the power of AI-driven leasing insights. Our Smart Tenant Acquisition & Retention API integrates seamlessly with your CRM, marketing platforms, and ad networks to predict which channels deliver your highest-value tenants — while automatically optimizing ad spend and recommending retention strategies.",
+      testLink: "https://occupancy-optimizer.vercel.app/"
     }
   ];
 
