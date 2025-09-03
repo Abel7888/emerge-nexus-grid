@@ -35,7 +35,7 @@ const MarketplaceSection = () => {
     {
       title: "🏠 TenantAI",
       description: "Unlock the power of AI-driven leasing insights. Our Smart Tenant Acquisition & Retention API integrates seamlessly with your CRM, marketing platforms, and ad networks to predict which channels deliver your highest-value tenants — while automatically optimizing ad spend and recommending retention strategies.",
-      testLink: "https://occupancy-optimizer.vercel.app/"
+      testLink: "https://occupancy-optimizer-26yvnew.vercel.app/"
     }
   ];
 

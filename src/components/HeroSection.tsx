@@ -29,7 +29,12 @@ const HeroSection = () => {
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           
-          <Button size="lg" variant="outline" className="btn-secondary px-8 py-4 text-lg font-semibold">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="btn-secondary px-8 py-4 text-lg font-semibold"
+            onClick={() => window.open('mailto:abelassefa788@gmail.com', '_blank')}
+          >
             <Mail className="mr-2 h-5 w-5" />
             Partner With Us
           </Button>
