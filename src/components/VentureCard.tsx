@@ -5,10 +5,11 @@ interface VentureCardProps {
   title: string;
   description: string;
   testLink?: string;
+  documentationLink?: string;
   isComingSoon?: boolean;
 }
 
-const VentureCard = ({ title, description, testLink, isComingSoon = false }: VentureCardProps) => {
+const VentureCard = ({ title, description, testLink, documentationLink, isComingSoon = false }: VentureCardProps) => {
   return (
     <div className="venture-card p-6 rounded-xl h-full flex flex-col">
       <h3 className="text-xl font-bold mb-4 text-foreground">{title}</h3>
@@ -23,6 +24,7 @@ const VentureCard = ({ title, description, testLink, isComingSoon = false }: Ven
             size="sm" 
             className="w-full border-border hover:border-accent transition-colors"
             disabled={isComingSoon}
+            onClick={() => documentationLink && window.open(documentationLink, '_blank')}
           >
             <FileText className="mr-2 h-4 w-4" />
             {isComingSoon ? "Coming Soon" : "Documentation"}
@@ -32,6 +34,7 @@ const VentureCard = ({ title, description, testLink, isComingSoon = false }: Ven
             size="sm" 
             className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
             disabled={isComingSoon}
+            onClick={() => window.open('mailto:abelassefa19@gmail.com', '_blank')}
           >
             <Wallet className="mr-2 h-4 w-4" />
             Fund Project
